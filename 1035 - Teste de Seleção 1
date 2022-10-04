@@ -1,0 +1,46 @@
+import java.util.*;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		int a , b , c , d;
+		int bMaiorC = 0, dMaiorA = 0, somaCD, somaAB, positivo = 0;
+		int aPar = 0 , maiorSomaABCD = 0;
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		a = entrada.nextInt();
+		b = entrada.nextInt();
+		c = entrada.nextInt();
+		d = entrada.nextInt();
+		
+		if(b>c) {
+			bMaiorC = 1;
+		}
+		
+		if(d>a) {
+			dMaiorA = 1;
+		}
+		
+		somaCD = c+d;
+		somaAB = a+b;
+		
+		if(somaCD>somaAB) {
+			maiorSomaABCD = 1;
+		}
+		if(c > 0 && d > 0) {
+			positivo = 1;
+		}
+		if(a % 2 == 0) {
+			aPar = 1;
+		}
+		
+		if(bMaiorC == 1 && dMaiorA == 1 && maiorSomaABCD == 1 && positivo == 1 && aPar == 1) {
+			
+			System.out.println("Valores aceitos");
+		}
+		else {
+			System.out.println("Valores nao aceitos");
+		}
+	}
+}
