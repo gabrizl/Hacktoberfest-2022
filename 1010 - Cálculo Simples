@@ -1,0 +1,24 @@
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+      
+    int peca1 , peca2 , cod1 , cod2;
+    double preco1 , preco2, valor;
+    
+    Scanner entrada = new Scanner(System.in);
+    
+    cod1 = entrada.nextInt();
+    peca1 = entrada.nextInt();
+    preco1 = entrada.nextDouble();
+    
+    cod2 = entrada.nextInt();
+    peca2 = entrada.nextInt();
+    preco2 = entrada.nextDouble();
+    
+    valor = peca1*preco1 + peca2*preco2;
+    
+    System.out.printf("VALOR A PAGAR: R$ %.2f\n",valor);
+    
+  }
+}
