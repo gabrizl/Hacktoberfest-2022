@@ -1,0 +1,35 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner entrada = new Scanner(System.in);
+    double a , b , c , delta , r1 , r2, raizDelta, potenciaB;
+
+    a = entrada.nextDouble();
+    b = entrada.nextDouble();
+    c = entrada.nextDouble();
+    
+    if(a == 0.0){
+      System.out.println("Impossivel calcular");
+    }
+    else{
+      potenciaB = Math.pow(b,2);
+      delta = potenciaB - 4*a*c;
+
+      if(delta < 0.0){
+      System.out.println("Impossivel calcular");
+      }
+      else{
+        raizDelta = Math.sqrt(delta);
+        r1 = (-b + raizDelta )/(2*a);
+        r2 = (-b - raizDelta)/(2*a);
+
+        System.out.printf("R1 = %.5f\n",r1);
+        System.out.printf("R2 = %.5f\n",r2);
+      }
+    }
+    
+    entrada.close();
+  }
+}
