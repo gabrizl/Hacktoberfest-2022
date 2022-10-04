@@ -2,7 +2,8 @@
 
 upa os códigos aqui
 
-pre requisito: tem que ta cadastrado no hacktoberfest
+pre requisito: tem que ta cadastrado no hacktoberfest<br>
+https://hacktoberfest.com/<br>
 
 1- faz o fork desse repositorio<br>
 2- add um codigo la (1 por vez)<br>
