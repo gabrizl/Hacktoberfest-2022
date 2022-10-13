@@ -1,0 +1,20 @@
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    int numero , horas;
+    double valorHora , salario;
+    Scanner entrada = new Scanner(System.in);
+    
+    numero = entrada.nextInt();
+    horas = entrada.nextInt();
+    valorHora = entrada.nextDouble();
+    
+    salario = horas * valorHora;
+    
+    System.out.println("NUMBER = "+numero);
+    System.out.printf("SALARY = U$ %.2f\n",salario);
+    
+
+  }
+}
