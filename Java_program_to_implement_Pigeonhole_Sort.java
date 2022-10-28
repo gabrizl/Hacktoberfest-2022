@@ -5,8 +5,7 @@ import java.util.*;
   
 public class GFG
 {
-    public static void pigeonhole_sort(int arr[],
-                                           int n)
+    public static void pigeonhole_sort(int arr[],int n)
     {
         int min = arr[0];
         int max = arr[0];
